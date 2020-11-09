@@ -31,7 +31,7 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <provider android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.vladstirbu.cordova.plugin.utils.AssetProvider">
+      <provider android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.vladstirbu.cordova.FileProvider">
         <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/instagramplugin_provider_paths" />
       </provider>
     </config-file>
@@ -41,7 +41,7 @@
 
     <source-file src="src/android/CDVInstagramPlugin.java" target-dir="src/com/vladstirbu/cordova" />
     <source-file src="src/android/FileProvider.java" target-dir="src/com/vladstirbu/cordova" />
-<!--    <source-file src="src/android/utils/AssetProvider.java" target-dir="src/com/vladstirbu/cordova" />-->
+    <source-file src="src/android/utils/AssetProvider.java" target-dir="src/com/vladstirbu/cordova" />
   </platform>
 
   <!-- ios -->
