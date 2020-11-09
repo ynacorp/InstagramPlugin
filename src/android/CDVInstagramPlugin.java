@@ -45,7 +45,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.util.Base64;
 import android.util.Log;
-import android.support.v4.content.FileProvider;
 
 @TargetApi(Build.VERSION_CODES.FROYO)
 public class CDVInstagramPlugin extends CordovaPlugin {
@@ -127,7 +126,7 @@ public class CDVInstagramPlugin extends CordovaPlugin {
                 shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
             } else {
                 // Handle the file URI using Android Oreo file provider
-                FileProvider FileProvider = new FileProvider();
+                //FileProvider FileProvider = new FileProvider();
 
                 Uri photoURI = FileProvider.getUriForFile(
                         this.cordova.getActivity().getApplicationContext(),
