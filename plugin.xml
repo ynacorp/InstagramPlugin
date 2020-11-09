@@ -40,7 +40,8 @@
 
 
     <source-file src="src/android/CDVInstagramPlugin.java" target-dir="src/com/vladstirbu/cordova" />
-    <source-file src="src/android/utils/AssetProvider.java" target-dir="src/com/vladstirbu/cordova" />
+    <source-file src="src/android/FileProvider.java" target-dir="src/com/vladstirbu/cordova" />
+<!--    <source-file src="src/android/utils/AssetProvider.java" target-dir="src/com/vladstirbu/cordova" />-->
   </platform>
 
   <!-- ios -->
